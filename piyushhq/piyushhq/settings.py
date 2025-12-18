@@ -68,7 +68,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'piyushhq.wsgi.application'
+
+WSGI_APPLICATION = 'piyushhq.piyushhq.wsgi.application'
+
 
 
 # Database
