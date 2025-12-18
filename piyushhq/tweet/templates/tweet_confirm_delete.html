@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Kro Tweet
+{% endblock title %}
+
+{% block content %}
+
+<h1 class="text-center mt-4" >
+   Are sure that you want to delete the tweet?
+</h1>
+
+<form  method="post">
+    {% csrf_token %}
+    <button class="btn btn-danger m-1">Delete</button>
+</form>
+<a class="btn btn-success m-1" href="{%url 'tweet_list'%}">Cancel</a>
+
+{% endblock %}
