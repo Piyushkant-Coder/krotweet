@@ -10,7 +10,11 @@ sys.path.append(BASE_DIR)
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'piyushhq.settings')
+    os.environ.setdefault(
+    'DJANGO_SETTINGS_MODULE',
+    'piyushhq.piyushhq.settings'
+)
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
